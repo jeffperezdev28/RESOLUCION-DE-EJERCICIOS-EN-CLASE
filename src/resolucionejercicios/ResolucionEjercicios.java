@@ -17,6 +17,7 @@ public class ResolucionEjercicios {
      */
     public static void main(String[] args) {
         //RESOLUCION DE EJERCICIOS PLANTEADOS EN CLASE PARA SUBIR A GIT
+        /*
         //EJERCICIO 1
         //Programa para el cálculo de promedio: Solicitar tres calificaciones, calcular el promedio aritmético y mostrarlo..
         double nota1=0;
@@ -81,7 +82,8 @@ public class ResolucionEjercicios {
         
         System.out.println("El area del circulo es: " + area);
         System.out.println("El perimetro del circulo es: " + perimetro);
-               
+        
+        
         //EJERCICIO 5
         //Cálculo del área y perímetro de un rombo:
         
@@ -102,6 +104,27 @@ public class ResolucionEjercicios {
         System.out.println("El perimetro del rombo es: " + perimetroRombo);
         
         System.out.println("Gracias");
+        
+        */
+        
+        
+        //Ejercicio 6 
+        //Encontrar el numero mayor y menor digitado de una persona
+        
+        int primerNumero=0;
+        int segundoNumero=0;
+        
+        System.out.println("Bienvenido al programa para calcular cual es el numero mayor");
+        primerNumero=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el primer numero"));
+        segundoNumero=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el segundo numero"));
+        
+        
+        if (primerNumero>segundoNumero) {
+            System.out.println("El primer  numero es mayor");
+        } else if (segundoNumero>primerNumero){
+            System.out.println("El segundo numero es mayor");
+        }else {System.out.println("Los numeros son iguales");
+    }
     }
     
 }
