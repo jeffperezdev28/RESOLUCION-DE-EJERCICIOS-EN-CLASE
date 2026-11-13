@@ -50,8 +50,21 @@ public class ResolucionEjercicios {
         diferenciaEdad=edadMadre-edadHijo;
         
         System.out.println("La diferencia de edad es de: " + diferenciaEdad + " años");
-
         
+        //EJERCICIO 3 
+        //Conversión de unidades: Convertir pesos colombianos a dólares.
+        
+        
+        System.out.println("===Bienvenido a la calculadora de conversion de pesos colombianos a dolares===");
+        double valorPesosColombianosActual=3301.50;
+        double valorPesosColombianos=0;
+        double valorDolares = 0;
+        
+        valorPesosColombianos=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el valor de pesos colombianos que desea convertir a dólares"));
+        
+        valorDolares=valorPesosColombianos/valorPesosColombianosActual;
+        
+        System.out.println("El valor en dólares es de: $" + valorDolares + " dólares");
         
         
         
