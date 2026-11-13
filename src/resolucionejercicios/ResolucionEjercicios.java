@@ -81,7 +81,27 @@ public class ResolucionEjercicios {
         
         System.out.println("El area del circulo es: " + area);
         System.out.println("El perimetro del circulo es: " + perimetro);
+               
+        //EJERCICIO 5
+        //Cálculo del área y perímetro de un rombo:
         
+        double diagonalMayor=0;
+        double diagonalMenor=0;
+        double ladoRombo=0;
+        double areaRombo=0;
+        double perimetroRombo=0;        
+        
+        diagonalMayor=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el valor de la diagonal mayor"));
+        diagonalMenor=Double.parseDouble(JOptionPane.showInputDialog(null,"Ingrese el valor de la diagonal menor"));
+        ladoRombo=Double.parseDouble(JOptionPane.showInputDialog(null,"Ingrese un lado del rombo"));
+        
+        areaRombo=(diagonalMayor*diagonalMenor)/2;
+        perimetroRombo=4*ladoRombo;
+        
+        System.out.println("El area del rombo es: " + areaRombo);
+        System.out.println("El perimetro del rombo es: " + perimetroRombo);
+        
+        System.out.println("Gracias");
     }
     
 }
