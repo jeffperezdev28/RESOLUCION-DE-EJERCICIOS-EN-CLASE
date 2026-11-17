@@ -79,6 +79,8 @@ public class MainTarea {
         
     }
     */
+    
+    /*
     public static void main(String[] args) {
         System.out.println("===Bienvenido al programa para calcular el perimetro y area de un ciruclo===");
         
@@ -100,12 +102,48 @@ public class MainTarea {
         double perimetroCirculo2=2*pi*longitudRadio2.radio;
         
         System.out.println("El área del circulo 2 es: " + areaCirculo2);
-        System.out.println("El perimetro del circulo 2 es: " + perimetroCirculo2);
+        System.out.println("El perimetro del circulo 2 es: " + perimetroCirculo2);     
+    }
+    */
+    public static void main(String[] args) {
+        System.out.println("===Bienvenido al programa para calcular el perimetro y area de un rombo===");
+        
+        FiguraGeometrica rombo1=new FiguraGeometrica();
+        rombo1.diagonalMayor=20;
+        rombo1.diagonalMenor=14;
+        rombo1.ladoRombo=4;
+        
+        double areaRombo1 =(rombo1.diagonalMayor*rombo1.diagonalMenor)/2;
+        double perimetroRombo1 = 4*rombo1.ladoRombo;
+        
+        System.out.println("El area del rombo 1 es de: " + areaRombo1 );
+        System.out.println("El perimetro del rombo 1 es de: " + perimetroRombo1 );
+        
+        FiguraGeometrica rombo2=new FiguraGeometrica(0,30,12, 7);
+        
+        
+        double areaRombo2=(rombo2.diagonalMayor*rombo2.diagonalMenor)/2;
+        double perimetroRombo2=4*rombo2.ladoRombo;
+        
+        System.out.println("El área del rombo 2 es de: " + areaRombo2 );
+        System.out.println("El perímetro del rombo 2 es de: " + perimetroRombo2);
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    }
+        
         
         
         
     }
+       
         
-        
-    }
+    
 }

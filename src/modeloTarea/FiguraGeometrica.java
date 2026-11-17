@@ -11,7 +11,9 @@ package modeloTarea;
 public class FiguraGeometrica {
     
     public int radio;
-    
+    public double diagonalMayor;
+    public double diagonalMenor;
+    public double ladoRombo;
     
     //CONSTRUCTOR VACIO
     public FiguraGeometrica(){}
@@ -19,8 +21,11 @@ public class FiguraGeometrica {
     
     //CONSTRUCTOR CON ARGUMENTOS
     
-    public FiguraGeometrica(int radio){
+    public FiguraGeometrica(int radio, double diagonalMayor, double diagonalMenor, double ladoRombo){
         this.radio=radio;
+        this.diagonalMayor=diagonalMayor;
+        this.diagonalMenor=diagonalMenor;
+        this.ladoRombo=ladoRombo;
     }
     
     
