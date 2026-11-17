@@ -9,6 +9,7 @@ import modeloTarea.FiguraGeometrica;
 import modeloTarea.Persona;
 import modeloTarea.Moneda;
 import modeloTarea.FiguraGeometrica;
+import modeloTarea.Numero;
 
 /**
  *
@@ -105,6 +106,7 @@ public class MainTarea {
         System.out.println("El perimetro del circulo 2 es: " + perimetroCirculo2);     
     }
     */
+    /*
     public static void main(String[] args) {
         System.out.println("===Bienvenido al programa para calcular el perimetro y area de un rombo===");
         
@@ -127,6 +129,35 @@ public class MainTarea {
         
         System.out.println("El área del rombo 2 es de: " + areaRombo2 );
         System.out.println("El perímetro del rombo 2 es de: " + perimetroRombo2);
+        
+    */
+    
+    public static void main(String[] args) {
+        System.out.println("===Bienvenido al programa para saber cual es el numero mayor===");
+        
+        Numero primerNumero=new Numero();
+        primerNumero.valor=3;
+        primerNumero.tipo="Entero";
+        primerNumero.signo='+';
+        
+        
+        Numero segundoNumero=new Numero(12,"Entero",'+');
+        
+        if (primerNumero.valor>segundoNumero.valor){
+            System.out.println("El primer numero es mayor");
+        } else if (segundoNumero.valor>primerNumero.valor){
+            System.out.println("El segundo número es mayor");
+        } else {System.out.println("Los numeros son iguales");}
+        
+            
+        
+        
+        
+        
+        
+        
+        
+    }
         
         
         
