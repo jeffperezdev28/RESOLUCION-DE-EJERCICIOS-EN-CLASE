@@ -6,6 +6,7 @@ package vistaTarea;
 
 import modeloTarea.Calificacion;
 import modeloTarea.Persona;
+import modeloTarea.Moneda;
 
 /**
  *
@@ -35,6 +36,8 @@ public class MainTarea {
     System.out.println("El promedio de las calificaciones es de: " + promedio);
     }
     */
+    
+    /*
     public static void main(String[] args) {
         
         System.out.println ("===Bienvenido al programa para calcular la diferencia de edad de una madre y su hijo===");
@@ -53,8 +56,28 @@ public class MainTarea {
        
         System.out.println("La diferencia de edad entre hijo y madre es de: " + diferenciaEdad);
         
+    */   
+   
+    public static void main(String[] args) {
+        System.out.println("===Bienvenido al programa para calcular la tasa de cambio de pesos colombianos a dolares===");
+        //CREAR O INSTANCIAR OBJETOS USANDO EL CONSTRUCTOR VACIO
+        
+        Moneda valorPesosColombianosActual=new Moneda();
+        valorPesosColombianosActual.tipoMoneda="Peso colombiano";
+        valorPesosColombianosActual.tasaCambio=3301.50;
+        valorPesosColombianosActual.pais="Colombia";
         
         
+        
+        Moneda valorPesosColombianos=new Moneda("Peso colombiano", 40000,"Colombia");
+        
+        double valorDolaresConvertido = valorPesosColombianos.tasaCambio/valorPesosColombianosActual.tasaCambio;
+        
+        System.out.println("El valor en dólares es de: " + valorDolaresConvertido);
+        
+    }
+    
+
         
         
     }
