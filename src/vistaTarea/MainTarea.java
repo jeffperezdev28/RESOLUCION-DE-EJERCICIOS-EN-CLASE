@@ -5,8 +5,10 @@
 package vistaTarea;
 
 import modeloTarea.Calificacion;
+import modeloTarea.FiguraGeometrica;
 import modeloTarea.Persona;
 import modeloTarea.Moneda;
+import modeloTarea.FiguraGeometrica;
 
 /**
  *
@@ -57,7 +59,7 @@ public class MainTarea {
         System.out.println("La diferencia de edad entre hijo y madre es de: " + diferenciaEdad);
         
     */   
-   
+   /*
     public static void main(String[] args) {
         System.out.println("===Bienvenido al programa para calcular la tasa de cambio de pesos colombianos a dolares===");
         //CREAR O INSTANCIAR OBJETOS USANDO EL CONSTRUCTOR VACIO
@@ -76,8 +78,33 @@ public class MainTarea {
         System.out.println("El valor en dólares es de: " + valorDolaresConvertido);
         
     }
-    
-
+    */
+    public static void main(String[] args) {
+        System.out.println("===Bienvenido al programa para calcular el perimetro y area de un ciruclo===");
+        
+        FiguraGeometrica longitudRadio1=new FiguraGeometrica();
+        longitudRadio1.radio=23;
+        
+        double pi=3.14159;
+        
+        double areaCirculo1= pi*(longitudRadio1.radio*longitudRadio1.radio);
+        double perimetroCirculo1=2*pi*longitudRadio1.radio;
+        
+        System.out.println("El área del circulo 1 es: " + areaCirculo1);
+        System.out.println("El perimetro del circulo 1 es: " + perimetroCirculo1);
+        
+        
+        FiguraGeometrica longitudRadio2=new FiguraGeometrica(15);
+        
+        double areaCirculo2= pi*(longitudRadio2.radio*longitudRadio2.radio);
+        double perimetroCirculo2=2*pi*longitudRadio2.radio;
+        
+        System.out.println("El área del circulo 2 es: " + areaCirculo2);
+        System.out.println("El perimetro del circulo 2 es: " + perimetroCirculo2);
+        
+        
+        
+    }
         
         
     }
